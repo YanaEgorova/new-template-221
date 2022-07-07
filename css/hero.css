@@ -1,0 +1,211 @@
+.hero {
+    text-align: center;
+    padding: 20rem 0;
+    position: relative;
+}
+.hero .title {
+    line-height: 1;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.hero .text {
+    margin: 0 auto 3rem;
+    max-width: 35rem;
+}
+.hero__btn-box {
+    display: flex;
+    justify-content: center;
+}
+.hero__btn-box .btn {
+    margin: 0;
+}
+.hero__btn-box .btn--right {
+    margin-right: .5rem;
+}
+
+
+
+
+
+.contacts {
+    padding: 15rem 0;
+    text-align: center;
+}
+.contacts .sub-title {
+    margin-bottom: 3rem;
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.contacts .text--mb  {
+    max-width: 40rem;
+    margin: 0 auto 3rem;
+}
+.contacts__item-link .text {
+    transition: .3s ease-in-out;
+}
+.contacts__list {
+    margin-bottom: 3rem;
+}
+
+
+
+
+.policy {
+    padding: 15rem 0;
+    text-align: center;
+}
+.policy .sub-title {
+    margin-bottom: 4rem;
+}
+.policy__sub-title {
+    font-family: var(--title-font);
+    color: var(--sub-text-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.policy__block {
+    max-width: 50rem;
+    margin: 0 auto;
+    background-color: var(--second-brand-color);
+    padding: 3rem;
+}
+.policy__block--top {
+    margin-bottom: 1rem;
+}
+.policy .text {
+    margin-bottom: 3rem;
+    color: var(--sub-text-color);
+}
+.policy .btn {
+    background-color: var(--sub-text-color);
+    border-color: var(--sub-text-color);
+    color: var(--second-brand-color);
+}
+
+
+
+
+
+.question {
+    padding: 12rem 0;
+    text-align: center;
+    position: relative;
+}
+.question .sub-title {
+    margin-bottom: 6rem;
+}
+.question__sub-title {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.question__item:not(:last-child) {
+    margin-bottom: 1rem;
+    position: relative;
+}
+.question__list {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.question__item {
+    background-color: var(--fourth-brand-color);
+    padding: 5rem 3rem;
+}
+.question__item .text,
+.question__sub-title {
+    color: var(--sub-text-color);
+}
+
+
+
+@media screen and (min-width: 1440px)  {
+    .hero,
+    .contacts,
+    .policy {
+        padding: 0;
+    }
+    .flex {
+        display: flex;
+    }
+    .flex-left {
+        width: calc(50% + 2rem);
+        margin-left: -2rem;
+        padding: 25rem 5rem;
+    }
+    .flex-right {
+        flex-grow: 1;
+        width: calc(50% + 2rem);
+        margin-right: -2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .hero .flex-right {
+        background-image: url('../img/bg1.jpeg');
+    }
+    .hero .flex-left {
+        background-color: var(--fourth-brand-color);
+    }
+    .hero .title,
+    .hero .text,
+    .contacts .sub-title,
+    .contacts .text,
+    .policy .sub-title {
+        color: var(--sub-text-color);
+    }
+
+
+    .contacts__item-link .text:hover {
+        letter-spacing: .2rem;
+    }
+    .contacts.flex,
+    .question.flex {
+        flex-direction: row-reverse;
+    }
+    .contacts .flex-right,
+    .question .flex-right {
+        background-image: url('../img/bg4.jpeg');
+        margin-right: 0;
+        margin-left: -2rem;
+    }
+    .contacts .flex-left,
+    .question .flex-left {
+        background-color: var(--second-brand-color);
+        margin-left: 0;
+        margin-right: -2rem;
+    }
+    .contacts .btn {
+        background-color: transparent;
+        border-color: var(--sub-text-color);
+    }
+    .contacts .btn:hover {
+        background-color: var(--sub-text-color);
+        color: var(--second-brand-color);
+    }
+
+
+    .policy .flex-left {
+        padding: 15rem 5rem;
+    }
+    .policy .flex-left {
+        background-color: var(--third-brand-color);
+    }
+    .policy .flex-right {
+        background-image: url('../img/bg3.jpeg');
+    }
+
+
+    .question {
+        padding: 0;
+    }
+    .question .flex-right {
+        background-image: url('../img/bg2.jpeg');
+    }
+    .question .flex-left {
+        background-color: var(--first-brand-color);
+        padding: 10rem 0;
+    }
+}
+
