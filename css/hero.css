@@ -166,7 +166,7 @@
     }
     .contacts .flex-right,
     .question .flex-right {
-        background-image: url('../img/bg4.jpeg');
+        background-color: var(--first-brand-color);
         margin-right: 0;
         margin-left: -2rem;
     }
@@ -193,7 +193,7 @@
         background-color: var(--third-brand-color);
     }
     .policy .flex-right {
-        background-image: url('../img/bg3.jpeg');
+        background-color: var(--second-brand-color);
     }
 
 
@@ -201,7 +201,7 @@
         padding: 0;
     }
     .question .flex-right {
-        background-image: url('../img/bg2.jpeg');
+        background-color: var(--second-brand-color);
     }
     .question .flex-left {
         background-color: var(--first-brand-color);
